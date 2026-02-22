@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "deterministicprinter",
+  "version": "${version}",
+  "name": "DeterministicPrinter",
+  "description": "Deterministic, layer-locked, inventory-aware schematic printer.",
+  "authors": [
+    "IceGamer7810",
+    "Codex AI"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.deterministicprinter.DeterministicPrinterClient"
+    ],
+    "modmenu": [
+      "com.deterministicprinter.integration.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
